@@ -1,0 +1,11 @@
+name: LockpickingPlugin
+version: 1.0
+main: cz.churaq.lock.Main
+api-version: 1.16
+commands:
+  lock:
+    description: Command to lock chests with different tiers
+    usage: /lock chest <tier>
+    arguments:
+      - chest
+      - tier

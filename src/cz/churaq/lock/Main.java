@@ -1,4 +1,21 @@
 package cz.churaq.lock;
 
-public class Main {
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class Main extends JavaPlugin {
+
+
+    @Override
+    public void onEnable() {
+
+        getServer().getPluginManager().registerEvents(new LockPickingListener(this, this));
+        getLogger().info("...");
+
+    }
+
+    @Override
+    public void onDisable() {
+
+        getLogger().info("...");
+    }
 }
